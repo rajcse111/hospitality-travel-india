@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix for mobile flickering and layout shifts */
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  scroll-behavior: smooth;
+  /* Prevent horizontal scroll which often causes flickering on mobile */
+  width: 100%;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Prevent flickering on touch */
+  -webkit-tap-highlight-color: transparent;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+}
+
+section {
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .navbar {
+    padding: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .logo {
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav ul {
+    margin: 0.5rem 0;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav ul li {
+    margin: 0.3rem 0.6rem;
+  }
+  
+  .cta-header {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  .about-flex, .contact-container {
+    flex-direction: column;
+  }
+}
