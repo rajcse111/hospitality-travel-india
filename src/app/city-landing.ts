@@ -32,11 +32,11 @@ export class CityLanding implements OnInit {
 
   setCityContent(city: string) {
     const descriptions: { [key: string]: string } = {
-      'delhi': 'Experience the heart of India with our premium hospitality and event services.',
-      'delhi-ncr': 'Comprehensive travel and lifestyle assistance across the National Capital Region.',
-      'agra': 'Explore the city of the Taj Mahal with curated travel and luxury dining experiences.',
-      'lucknow': 'Discover the Nawabi culture with our specialized stay and entertainment services.'
+      'delhi': 'Experience the heart of Delhi/NCR with our premium event management and hospitality services.',
+      'delhi-ncr': 'Comprehensive event planning and lifestyle assistance across the National Capital Region.',
+      'agra': 'Explore the city of the Taj Mahal with curated event support and luxury dining experiences.',
+      'lucknow': 'Discover the Nawabi culture with our specialized event and entertainment services.'
     };
-    this.cityDescription = descriptions[city] || 'Premier hospitality and travel assistance in India.';
+    this.cityDescription = descriptions[city] || 'Premier event management and hospitality assistance in Delhi/NCR.';
   }
 }
