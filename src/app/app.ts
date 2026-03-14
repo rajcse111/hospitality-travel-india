@@ -10,5 +10,5 @@ import { Footer } from './footer';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('hospitality-travel-india');
+  protected readonly title = signal('All-in-One Hospitality, Travel Assistance & Event Management Platform');
 }

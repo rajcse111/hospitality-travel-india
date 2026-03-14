@@ -3,7 +3,21 @@
   <nav>
     <ul>
       <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/" fragment="services">Services</a></li>
+      <li class="dropdown">
+        <a routerLink="/" fragment="services">Services</a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/services/event-management">Event Management</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)">Cities</a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/delhi">Delhi</a></li>
+          <li><a routerLink="/delhi-ncr">Delhi NCR</a></li>
+          <li><a routerLink="/agra">Agra</a></li>
+          <li><a routerLink="/lucknow">Lucknow</a></li>
+        </ul>
+      </li>
       <li><a routerLink="/gallery">Gallery</a></li>
       <li><a routerLink="/rate-us">Rate Us</a></li>
       <li><a routerLink="/" fragment="contact">Contact</a></li>
